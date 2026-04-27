@@ -14,7 +14,7 @@ As soon as you have a list, use DTOs, write your query in SQL to stay close to t
 ## Second Pillar
 Don't add unnecessary layers, you need to understand clearly what you write, stay close to the truth, to what we TRUST
 
-# Parctical examples
+# Practical examples
 Coming soon under the moon...
 
 # About me
