@@ -14,6 +14,9 @@ As soon as you have a list, use DTOs, write your query in SQL to stay close to t
 ## Second Pillar
 Don't add unnecessary layers, you need to understand clearly what you write, stay close to the truth, to what we TRUST
 
+## Third Pillar
+DTOs, repositories, and APIs should remain isolated within their domain boundary.
+
 # Practical examples
 Coming soon under the moon...
 
