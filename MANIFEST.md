@@ -133,7 +133,25 @@ They simplify persistence while remaining understandable.
 
 ---
 
-## 4. Use SQL and DTOs for Lists and Complex Reads
+## 4. DTOs, repositories, and APIs should remain isolated within their domain boundary.
+
+Motherheart Architecture treats a domain as a protected environment.
+
+A DTO, repository, and API that belong to the same purpose should live together inside the same package or bounded area.
+
+This isolation prevents:
+
+Circular dependencies
+Cross-domain leakage
+Hidden coupling between unrelated features
+Shared ownership confusion
+Domain knowledge spreading uncontrollably across the system
+
+Just as a mother protects the environment around a child, Motherheart Architecture protects the environment around a domain.
+
+---
+
+## 5. Use SQL and DTOs for Lists and Complex Reads
 
 As soon as a query becomes list-oriented, aggregated, analytical, or performance-sensitive, Motherheart Architecture moves closer to SQL.
 
@@ -160,7 +178,7 @@ Do not load what you do not need.
 
 ---
 
-## 5. Limit Abstraction Intentionally
+## 6. Limit Abstraction Intentionally
 
 Abstraction is not automatically good.
 
@@ -176,7 +194,7 @@ It uses abstraction only when the value is greater than the cost.
 
 ---
 
-## 6. Responsibility Must Stay Visible
+## 7. Responsibility Must Stay Visible
 
 The engineer remains responsible for the executed behavior.
 
@@ -191,7 +209,7 @@ A developer should understand what happens between code and database.
 
 ---
 
-## 7. Data Stays Close to Its Source
+## 8. Data Stays Close to Its Source
 
 Information should remain as close as possible to its origin.
 
