@@ -1,9 +1,9 @@
-package org.motherheart.examples.jakartadata.shop.product.api;
+package ch.motherheart.examples.jakartadata.shop.product.api;
 
-import org.motherheart.examples.jakartadata.shop.product.dto.ProductListItem;
-import org.motherheart.examples.jakartadata.shop.product.dto.ProductRequest;
-import org.motherheart.examples.jakartadata.shop.product.dto.ProductView;
-import org.motherheart.examples.jakartadata.shop.product.service.ProductService;
+import ch.motherheart.examples.jakartadata.shop.product.dto.ProductListItem;
+import ch.motherheart.examples.jakartadata.shop.product.dto.ProductRequest;
+import ch.motherheart.examples.jakartadata.shop.product.dto.ProductView;
+import ch.motherheart.examples.jakartadata.shop.product.service.ProductService;
 import jakarta.validation.Valid;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;

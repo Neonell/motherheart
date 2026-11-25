@@ -1,11 +1,11 @@
-package org.motherheart.examples.jakartadata.shop.product.service;
+package ch.motherheart.examples.jakartadata.shop.product.service;
 
-import org.motherheart.examples.jakartadata.shop.common.DomainNotFoundException;
-import org.motherheart.examples.jakartadata.shop.product.dto.ProductListItem;
-import org.motherheart.examples.jakartadata.shop.product.dto.ProductRequest;
-import org.motherheart.examples.jakartadata.shop.product.dto.ProductView;
-import org.motherheart.examples.jakartadata.shop.product.persistence.Product;
-import org.motherheart.examples.jakartadata.shop.product.persistence.ProductRepository;
+import ch.motherheart.examples.jakartadata.shop.common.DomainNotFoundException;
+import ch.motherheart.examples.jakartadata.shop.product.dto.ProductListItem;
+import ch.motherheart.examples.jakartadata.shop.product.dto.ProductRequest;
+import ch.motherheart.examples.jakartadata.shop.product.dto.ProductView;
+import ch.motherheart.examples.jakartadata.shop.product.persistence.Product;
+import ch.motherheart.examples.jakartadata.shop.product.persistence.ProductRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.transaction.Transactional;
 import java.math.BigDecimal;

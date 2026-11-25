@@ -1,13 +1,13 @@
-package org.motherheart.examples.jooq.shop.order.service;
+package ch.motherheart.examples.jooq.shop.order.service;
 
-import org.motherheart.examples.jooq.heart.tables.records.PurchaseOrderRecord;
-import org.motherheart.examples.jooq.shop.common.DomainRejectedException;
-import org.motherheart.examples.jooq.shop.customer.service.CustomerService;
-import org.motherheart.examples.jooq.shop.order.dto.OrderSummary;
-import org.motherheart.examples.jooq.shop.order.dto.PlaceOrderRequest;
-import org.motherheart.examples.jooq.shop.order.dto.PlacedOrder;
-import org.motherheart.examples.jooq.shop.order.persistence.OrderRepository;
-import org.motherheart.examples.jooq.shop.product.service.ProductService;
+import ch.motherheart.examples.jooq.heart.tables.records.PurchaseOrderRecord;
+import ch.motherheart.examples.jooq.shop.common.DomainRejectedException;
+import ch.motherheart.examples.jooq.shop.customer.service.CustomerService;
+import ch.motherheart.examples.jooq.shop.order.dto.OrderSummary;
+import ch.motherheart.examples.jooq.shop.order.dto.PlaceOrderRequest;
+import ch.motherheart.examples.jooq.shop.order.dto.PlacedOrder;
+import ch.motherheart.examples.jooq.shop.order.persistence.OrderRepository;
+import ch.motherheart.examples.jooq.shop.product.service.ProductService;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.transaction.Transactional;
 import java.math.BigDecimal;

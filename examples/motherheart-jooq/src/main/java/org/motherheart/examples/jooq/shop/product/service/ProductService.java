@@ -1,11 +1,11 @@
-package org.motherheart.examples.jooq.shop.product.service;
+package ch.motherheart.examples.jooq.shop.product.service;
 
-import org.motherheart.examples.jooq.heart.tables.records.ProductRecord;
-import org.motherheart.examples.jooq.shop.common.DomainNotFoundException;
-import org.motherheart.examples.jooq.shop.product.dto.ProductListItem;
-import org.motherheart.examples.jooq.shop.product.dto.ProductRequest;
-import org.motherheart.examples.jooq.shop.product.dto.ProductView;
-import org.motherheart.examples.jooq.shop.product.persistence.ProductRepository;
+import ch.motherheart.examples.jooq.heart.tables.records.ProductRecord;
+import ch.motherheart.examples.jooq.shop.common.DomainNotFoundException;
+import ch.motherheart.examples.jooq.shop.product.dto.ProductListItem;
+import ch.motherheart.examples.jooq.shop.product.dto.ProductRequest;
+import ch.motherheart.examples.jooq.shop.product.dto.ProductView;
+import ch.motherheart.examples.jooq.shop.product.persistence.ProductRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.transaction.Transactional;
 import java.math.BigDecimal;

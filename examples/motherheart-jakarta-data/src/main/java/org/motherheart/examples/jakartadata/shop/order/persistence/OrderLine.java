@@ -1,4 +1,4 @@
-package org.motherheart.examples.jakartadata.shop.order.persistence;
+package ch.motherheart.examples.jakartadata.shop.order.persistence;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

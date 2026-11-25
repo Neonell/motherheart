@@ -1,6 +1,6 @@
-package org.motherheart.examples.jooq.shop;
+package ch.motherheart.examples.jooq.shop;
 
-import static org.motherheart.examples.jooq.shop.Api.json;
+import static ch.motherheart.examples.jooq.shop.Api.json;
 import static org.hamcrest.Matchers.closeTo;
 import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.hasSize;

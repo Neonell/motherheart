@@ -1,14 +1,14 @@
-package org.motherheart.examples.jakartadata.shop.order.service;
+package ch.motherheart.examples.jakartadata.shop.order.service;
 
-import org.motherheart.examples.jakartadata.shop.common.DomainRejectedException;
-import org.motherheart.examples.jakartadata.shop.customer.service.CustomerService;
-import org.motherheart.examples.jakartadata.shop.order.dto.OrderSummary;
-import org.motherheart.examples.jakartadata.shop.order.dto.PlaceOrderRequest;
-import org.motherheart.examples.jakartadata.shop.order.dto.PlacedOrder;
-import org.motherheart.examples.jakartadata.shop.order.persistence.OrderLine;
-import org.motherheart.examples.jakartadata.shop.order.persistence.OrderRepository;
-import org.motherheart.examples.jakartadata.shop.order.persistence.PurchaseOrder;
-import org.motherheart.examples.jakartadata.shop.product.service.ProductService;
+import ch.motherheart.examples.jakartadata.shop.common.DomainRejectedException;
+import ch.motherheart.examples.jakartadata.shop.customer.service.CustomerService;
+import ch.motherheart.examples.jakartadata.shop.order.dto.OrderSummary;
+import ch.motherheart.examples.jakartadata.shop.order.dto.PlaceOrderRequest;
+import ch.motherheart.examples.jakartadata.shop.order.dto.PlacedOrder;
+import ch.motherheart.examples.jakartadata.shop.order.persistence.OrderLine;
+import ch.motherheart.examples.jakartadata.shop.order.persistence.OrderRepository;
+import ch.motherheart.examples.jakartadata.shop.order.persistence.PurchaseOrder;
+import ch.motherheart.examples.jakartadata.shop.product.service.ProductService;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.transaction.Transactional;
 import java.math.BigDecimal;

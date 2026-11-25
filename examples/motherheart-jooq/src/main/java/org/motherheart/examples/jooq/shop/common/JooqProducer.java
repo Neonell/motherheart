@@ -1,4 +1,4 @@
-package org.motherheart.examples.jooq.shop.common;
+package ch.motherheart.examples.jooq.shop.common;
 
 import io.agroal.api.AgroalDataSource;
 import jakarta.enterprise.inject.Produces;

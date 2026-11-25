@@ -1,4 +1,4 @@
-package org.motherheart.examples.jooq.shop.common;
+package ch.motherheart.examples.jooq.shop.common;
 
 /** The request is understood but refused by a domain rule. Mapped to HTTP 400. */
 public class DomainRejectedException extends RuntimeException {

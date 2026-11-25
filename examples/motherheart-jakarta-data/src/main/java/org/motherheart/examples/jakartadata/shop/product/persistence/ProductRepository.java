@@ -1,6 +1,6 @@
-package org.motherheart.examples.jakartadata.shop.product.persistence;
+package ch.motherheart.examples.jakartadata.shop.product.persistence;
 
-import org.motherheart.examples.jakartadata.shop.product.dto.ProductListItem;
+import ch.motherheart.examples.jakartadata.shop.product.dto.ProductListItem;
 import jakarta.data.repository.CrudRepository;
 import jakarta.data.repository.Query;
 import jakarta.data.repository.Repository;
@@ -13,7 +13,7 @@ import java.util.Optional;
 public interface ProductRepository extends CrudRepository<Product, Long> {
 
     @Query("""
-            select new org.motherheart.examples.jakartadata.shop.product.dto.ProductListItem(p.id, p.name, p.price)
+            select new ch.motherheart.examples.jakartadata.shop.product.dto.ProductListItem(p.id, p.name, p.price)
             from Product p
             where p.price <= :maxPrice
             order by p.price, p.name""")

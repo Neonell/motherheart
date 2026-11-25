@@ -1,4 +1,4 @@
-package org.motherheart.examples.jakartadata.shop.order.dto;
+package ch.motherheart.examples.jakartadata.shop.order.dto;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

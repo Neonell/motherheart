@@ -1,17 +1,17 @@
-package org.motherheart.examples.jakartadata.arch;
+package ch.motherheart.examples.jakartadata.arch;
 
-import org.motherheart.archunit.MotherheartArchitecture;
+import ch.motherheart.archunit.MotherheartArchitecture;
 import com.tngtech.archunit.core.importer.ImportOption;
 import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchRule;
 
 /** The manifest, checked on every build. */
-@AnalyzeClasses(packages = "org.motherheart.examples.jakartadata", importOptions = ImportOption.DoNotIncludeTests.class)
+@AnalyzeClasses(packages = "ch.motherheart.examples.jakartadata", importOptions = ImportOption.DoNotIncludeTests.class)
 class MotherheartArchitectureTest {
 
     private static final MotherheartArchitecture SHOP =
-            MotherheartArchitecture.of("org.motherheart.examples.jakartadata.shop").shared("common");
+            MotherheartArchitecture.of("ch.motherheart.examples.jakartadata.shop").shared("common");
 
     @ArchTest
     static final ArchRule domain_classes_live_in_a_layer = SHOP.domainClassesLiveInALayer();

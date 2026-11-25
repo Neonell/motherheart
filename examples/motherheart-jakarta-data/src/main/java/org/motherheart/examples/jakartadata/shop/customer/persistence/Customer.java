@@ -1,4 +1,4 @@
-package org.motherheart.examples.jakartadata.shop.customer.persistence;
+package ch.motherheart.examples.jakartadata.shop.customer.persistence;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

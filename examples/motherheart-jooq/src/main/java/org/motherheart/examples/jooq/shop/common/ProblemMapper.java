@@ -1,4 +1,4 @@
-package org.motherheart.examples.jooq.shop.common;
+package ch.motherheart.examples.jooq.shop.common;
 
 import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.core.Response.Status;

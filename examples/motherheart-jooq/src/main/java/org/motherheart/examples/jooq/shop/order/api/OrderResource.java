@@ -1,9 +1,9 @@
-package org.motherheart.examples.jooq.shop.order.api;
+package ch.motherheart.examples.jooq.shop.order.api;
 
-import org.motherheart.examples.jooq.shop.order.dto.OrderSummary;
-import org.motherheart.examples.jooq.shop.order.dto.PlaceOrderRequest;
-import org.motherheart.examples.jooq.shop.order.dto.PlacedOrder;
-import org.motherheart.examples.jooq.shop.order.service.OrderService;
+import ch.motherheart.examples.jooq.shop.order.dto.OrderSummary;
+import ch.motherheart.examples.jooq.shop.order.dto.PlaceOrderRequest;
+import ch.motherheart.examples.jooq.shop.order.dto.PlacedOrder;
+import ch.motherheart.examples.jooq.shop.order.service.OrderService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import jakarta.ws.rs.GET;

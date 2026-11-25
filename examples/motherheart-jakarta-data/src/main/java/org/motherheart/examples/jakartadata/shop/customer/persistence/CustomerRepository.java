@@ -1,6 +1,6 @@
-package org.motherheart.examples.jakartadata.shop.customer.persistence;
+package ch.motherheart.examples.jakartadata.shop.customer.persistence;
 
-import org.motherheart.examples.jakartadata.shop.customer.dto.CustomerListItem;
+import ch.motherheart.examples.jakartadata.shop.customer.dto.CustomerListItem;
 import jakarta.data.repository.CrudRepository;
 import jakarta.data.repository.Query;
 import jakarta.data.repository.Repository;
@@ -17,7 +17,7 @@ import java.util.List;
 public interface CustomerRepository extends CrudRepository<Customer, Long> {
 
     @Query("""
-            select new org.motherheart.examples.jakartadata.shop.customer.dto.CustomerListItem(c.id, c.name)
+            select new ch.motherheart.examples.jakartadata.shop.customer.dto.CustomerListItem(c.id, c.name)
             from Customer c
             order by c.name""")
     List<CustomerListItem> list();

@@ -1,9 +1,9 @@
-package org.motherheart.examples.jooq.shop.customer.api;
+package ch.motherheart.examples.jooq.shop.customer.api;
 
-import org.motherheart.examples.jooq.shop.customer.dto.CustomerListItem;
-import org.motherheart.examples.jooq.shop.customer.dto.CustomerRequest;
-import org.motherheart.examples.jooq.shop.customer.dto.CustomerView;
-import org.motherheart.examples.jooq.shop.customer.service.CustomerService;
+import ch.motherheart.examples.jooq.shop.customer.dto.CustomerListItem;
+import ch.motherheart.examples.jooq.shop.customer.dto.CustomerRequest;
+import ch.motherheart.examples.jooq.shop.customer.dto.CustomerView;
+import ch.motherheart.examples.jooq.shop.customer.service.CustomerService;
 import jakarta.validation.Valid;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;

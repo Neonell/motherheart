@@ -1,6 +1,6 @@
-package org.motherheart.examples.jooq.arch;
+package ch.motherheart.examples.jooq.arch;
 
-import org.motherheart.archunit.MotherheartArchitecture;
+import ch.motherheart.archunit.MotherheartArchitecture;
 import com.tngtech.archunit.core.domain.JavaClass;
 import com.tngtech.archunit.core.importer.ImportOption;
 import com.tngtech.archunit.junit.AnalyzeClasses;
@@ -9,13 +9,13 @@ import com.tngtech.archunit.lang.ArchRule;
 import org.jooq.UpdatableRecord;
 
 /** The manifest, checked on every build. */
-@AnalyzeClasses(packages = "org.motherheart.examples.jooq", importOptions = ImportOption.DoNotIncludeTests.class)
+@AnalyzeClasses(packages = "ch.motherheart.examples.jooq", importOptions = ImportOption.DoNotIncludeTests.class)
 class MotherheartArchitectureTest {
 
     /** With jOOQ, the "entities" are the generated UpdatableRecords, and the generated schema is the heart. */
     private static final MotherheartArchitecture SHOP =
-            MotherheartArchitecture.of("org.motherheart.examples.jooq.shop")
-                    .heart("org.motherheart.examples.jooq.heart")
+            MotherheartArchitecture.of("ch.motherheart.examples.jooq.shop")
+                    .heart("ch.motherheart.examples.jooq.heart")
                     .shared("common")
                     .entities(JavaClass.Predicates.assignableTo(UpdatableRecord.class).as("are jOOQ updatable records"));
 

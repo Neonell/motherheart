@@ -1,8 +1,8 @@
-package org.motherheart.examples.jooq.shop.dashboard.service;
+package ch.motherheart.examples.jooq.shop.dashboard.service;
 
-import org.motherheart.examples.jooq.shop.dashboard.dto.MonthlyRevenue;
-import org.motherheart.examples.jooq.shop.dashboard.dto.TopProduct;
-import org.motherheart.examples.jooq.shop.dashboard.persistence.DashboardRepository;
+import ch.motherheart.examples.jooq.shop.dashboard.dto.MonthlyRevenue;
+import ch.motherheart.examples.jooq.shop.dashboard.dto.TopProduct;
+import ch.motherheart.examples.jooq.shop.dashboard.persistence.DashboardRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.transaction.Transactional;
 import java.time.LocalDateTime;

@@ -1,6 +1,6 @@
-package org.motherheart.examples.jakartadata.shop;
+package ch.motherheart.examples.jakartadata.shop;
 
-import static org.motherheart.examples.jakartadata.shop.Api.json;
+import static ch.motherheart.examples.jakartadata.shop.Api.json;
 import static org.hamcrest.Matchers.closeTo;
 import static org.hamcrest.Matchers.everyItem;
 import static org.hamcrest.Matchers.hasItem;

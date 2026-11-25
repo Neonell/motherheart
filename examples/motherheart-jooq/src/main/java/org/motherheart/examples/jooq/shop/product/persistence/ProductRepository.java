@@ -1,9 +1,9 @@
-package org.motherheart.examples.jooq.shop.product.persistence;
+package ch.motherheart.examples.jooq.shop.product.persistence;
 
-import static org.motherheart.examples.jooq.heart.Tables.PRODUCT;
+import static ch.motherheart.examples.jooq.heart.Tables.PRODUCT;
 
-import org.motherheart.examples.jooq.heart.tables.records.ProductRecord;
-import org.motherheart.examples.jooq.shop.product.dto.ProductListItem;
+import ch.motherheart.examples.jooq.heart.tables.records.ProductRecord;
+import ch.motherheart.examples.jooq.shop.product.dto.ProductListItem;
 import jakarta.enterprise.context.ApplicationScoped;
 import java.math.BigDecimal;
 import java.util.List;

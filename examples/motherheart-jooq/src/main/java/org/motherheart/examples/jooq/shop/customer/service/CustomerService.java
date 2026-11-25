@@ -1,11 +1,11 @@
-package org.motherheart.examples.jooq.shop.customer.service;
+package ch.motherheart.examples.jooq.shop.customer.service;
 
-import org.motherheart.examples.jooq.heart.tables.records.CustomerRecord;
-import org.motherheart.examples.jooq.shop.common.DomainNotFoundException;
-import org.motherheart.examples.jooq.shop.customer.dto.CustomerListItem;
-import org.motherheart.examples.jooq.shop.customer.dto.CustomerRequest;
-import org.motherheart.examples.jooq.shop.customer.dto.CustomerView;
-import org.motherheart.examples.jooq.shop.customer.persistence.CustomerRepository;
+import ch.motherheart.examples.jooq.heart.tables.records.CustomerRecord;
+import ch.motherheart.examples.jooq.shop.common.DomainNotFoundException;
+import ch.motherheart.examples.jooq.shop.customer.dto.CustomerListItem;
+import ch.motherheart.examples.jooq.shop.customer.dto.CustomerRequest;
+import ch.motherheart.examples.jooq.shop.customer.dto.CustomerView;
+import ch.motherheart.examples.jooq.shop.customer.persistence.CustomerRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.transaction.Transactional;
 import java.util.List;

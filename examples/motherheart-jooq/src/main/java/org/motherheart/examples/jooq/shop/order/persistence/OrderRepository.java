@@ -1,12 +1,12 @@
-package org.motherheart.examples.jooq.shop.order.persistence;
+package ch.motherheart.examples.jooq.shop.order.persistence;
 
-import static org.motherheart.examples.jooq.heart.Tables.ORDER_LINE;
-import static org.motherheart.examples.jooq.heart.Tables.PURCHASE_ORDER;
+import static ch.motherheart.examples.jooq.heart.Tables.ORDER_LINE;
+import static ch.motherheart.examples.jooq.heart.Tables.PURCHASE_ORDER;
 import static org.jooq.impl.DSL.count;
 import static org.jooq.impl.DSL.sum;
 
-import org.motherheart.examples.jooq.heart.tables.records.PurchaseOrderRecord;
-import org.motherheart.examples.jooq.shop.order.dto.OrderSummary;
+import ch.motherheart.examples.jooq.heart.tables.records.PurchaseOrderRecord;
+import ch.motherheart.examples.jooq.shop.order.dto.OrderSummary;
 import jakarta.enterprise.context.ApplicationScoped;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

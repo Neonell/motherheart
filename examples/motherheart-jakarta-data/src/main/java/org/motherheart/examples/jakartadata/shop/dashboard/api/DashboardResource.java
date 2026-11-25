@@ -1,8 +1,8 @@
-package org.motherheart.examples.jakartadata.shop.dashboard.api;
+package ch.motherheart.examples.jakartadata.shop.dashboard.api;
 
-import org.motherheart.examples.jakartadata.shop.dashboard.dto.MonthlyRevenue;
-import org.motherheart.examples.jakartadata.shop.dashboard.dto.TopProduct;
-import org.motherheart.examples.jakartadata.shop.dashboard.service.DashboardService;
+import ch.motherheart.examples.jakartadata.shop.dashboard.dto.MonthlyRevenue;
+import ch.motherheart.examples.jakartadata.shop.dashboard.dto.TopProduct;
+import ch.motherheart.examples.jakartadata.shop.dashboard.service.DashboardService;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.ws.rs.DefaultValue;

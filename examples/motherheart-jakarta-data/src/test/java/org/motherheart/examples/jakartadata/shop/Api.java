@@ -1,4 +1,4 @@
-package org.motherheart.examples.jakartadata.shop;
+package ch.motherheart.examples.jakartadata.shop;
 
 import static io.restassured.RestAssured.given;
 

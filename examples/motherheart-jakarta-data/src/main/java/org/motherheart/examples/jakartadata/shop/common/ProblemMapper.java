@@ -1,4 +1,4 @@
-package org.motherheart.examples.jakartadata.shop.common;
+package ch.motherheart.examples.jakartadata.shop.common;
 
 import jakarta.data.exceptions.DataException;
 import jakarta.persistence.PersistenceException;

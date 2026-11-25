@@ -1,4 +1,4 @@
-package org.motherheart.examples.jakartadata.shop.product.dto;
+package ch.motherheart.examples.jakartadata.shop.product.dto;
 
 import java.math.BigDecimal;
 

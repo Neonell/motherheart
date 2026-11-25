@@ -1,4 +1,4 @@
-package org.motherheart.examples.jooq.shop.product.dto;
+package ch.motherheart.examples.jooq.shop.product.dto;
 
 import java.math.BigDecimal;
 

@@ -1,7 +1,7 @@
-package org.motherheart.examples.jakartadata.shop.dashboard.persistence;
+package ch.motherheart.examples.jakartadata.shop.dashboard.persistence;
 
-import org.motherheart.examples.jakartadata.shop.dashboard.dto.MonthlyRevenue;
-import org.motherheart.examples.jakartadata.shop.dashboard.dto.TopProduct;
+import ch.motherheart.examples.jakartadata.shop.dashboard.dto.MonthlyRevenue;
+import ch.motherheart.examples.jakartadata.shop.dashboard.dto.TopProduct;
 import jakarta.data.Limit;
 import jakarta.data.repository.Query;
 import jakarta.data.repository.Repository;
@@ -19,7 +19,7 @@ import java.util.List;
 public interface DashboardRepository {
 
     @Query("""
-            select new org.motherheart.examples.jakartadata.shop.dashboard.dto.MonthlyRevenue(
+            select new ch.motherheart.examples.jakartadata.shop.dashboard.dto.MonthlyRevenue(
                 extract(year from o.orderedAt), extract(month from o.orderedAt),
                 count(distinct o.id), sum(l.quantity * l.unitPrice))
             from PurchaseOrder o
@@ -30,7 +30,7 @@ public interface DashboardRepository {
     List<MonthlyRevenue> revenueByMonth(LocalDateTime from, LocalDateTime to);
 
     @Query("""
-            select new org.motherheart.examples.jakartadata.shop.dashboard.dto.TopProduct(
+            select new ch.motherheart.examples.jakartadata.shop.dashboard.dto.TopProduct(
                 p.id, p.name, sum(l.quantity), sum(l.quantity * l.unitPrice))
             from OrderLine l
                 join PurchaseOrder o on o.id = l.orderId

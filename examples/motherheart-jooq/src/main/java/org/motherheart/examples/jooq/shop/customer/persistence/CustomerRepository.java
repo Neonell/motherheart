@@ -1,9 +1,9 @@
-package org.motherheart.examples.jooq.shop.customer.persistence;
+package ch.motherheart.examples.jooq.shop.customer.persistence;
 
-import static org.motherheart.examples.jooq.heart.Tables.CUSTOMER;
+import static ch.motherheart.examples.jooq.heart.Tables.CUSTOMER;
 
-import org.motherheart.examples.jooq.heart.tables.records.CustomerRecord;
-import org.motherheart.examples.jooq.shop.customer.dto.CustomerListItem;
+import ch.motherheart.examples.jooq.heart.tables.records.CustomerRecord;
+import ch.motherheart.examples.jooq.shop.customer.dto.CustomerListItem;
 import jakarta.enterprise.context.ApplicationScoped;
 import java.util.List;
 import java.util.Optional;

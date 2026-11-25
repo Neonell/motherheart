@@ -1,8 +1,8 @@
-package org.motherheart.examples.jakartadata.shop.dashboard.service;
+package ch.motherheart.examples.jakartadata.shop.dashboard.service;
 
-import org.motherheart.examples.jakartadata.shop.dashboard.dto.MonthlyRevenue;
-import org.motherheart.examples.jakartadata.shop.dashboard.dto.TopProduct;
-import org.motherheart.examples.jakartadata.shop.dashboard.persistence.DashboardRepository;
+import ch.motherheart.examples.jakartadata.shop.dashboard.dto.MonthlyRevenue;
+import ch.motherheart.examples.jakartadata.shop.dashboard.dto.TopProduct;
+import ch.motherheart.examples.jakartadata.shop.dashboard.persistence.DashboardRepository;
 import jakarta.data.Limit;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.transaction.Transactional;

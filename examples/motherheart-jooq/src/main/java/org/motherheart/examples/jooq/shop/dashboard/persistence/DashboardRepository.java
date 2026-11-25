@@ -1,14 +1,14 @@
-package org.motherheart.examples.jooq.shop.dashboard.persistence;
+package ch.motherheart.examples.jooq.shop.dashboard.persistence;
 
-import static org.motherheart.examples.jooq.heart.Tables.ORDER_LINE;
-import static org.motherheart.examples.jooq.heart.Tables.PRODUCT;
-import static org.motherheart.examples.jooq.heart.Tables.PURCHASE_ORDER;
+import static ch.motherheart.examples.jooq.heart.Tables.ORDER_LINE;
+import static ch.motherheart.examples.jooq.heart.Tables.PRODUCT;
+import static ch.motherheart.examples.jooq.heart.Tables.PURCHASE_ORDER;
 import static org.jooq.impl.DSL.countDistinct;
 import static org.jooq.impl.DSL.extract;
 import static org.jooq.impl.DSL.sum;
 
-import org.motherheart.examples.jooq.shop.dashboard.dto.MonthlyRevenue;
-import org.motherheart.examples.jooq.shop.dashboard.dto.TopProduct;
+import ch.motherheart.examples.jooq.shop.dashboard.dto.MonthlyRevenue;
+import ch.motherheart.examples.jooq.shop.dashboard.dto.TopProduct;
 import jakarta.enterprise.context.ApplicationScoped;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

@@ -1,4 +1,4 @@
-package org.motherheart.examples.jakartadata.shop.order.dto;
+package ch.motherheart.examples.jakartadata.shop.order.dto;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotEmpty;

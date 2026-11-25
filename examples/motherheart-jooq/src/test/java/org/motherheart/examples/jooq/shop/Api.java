@@ -1,4 +1,4 @@
-package org.motherheart.examples.jooq.shop;
+package ch.motherheart.examples.jooq.shop;
 
 import static io.restassured.RestAssured.given;
 

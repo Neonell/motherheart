@@ -1,6 +1,6 @@
-package org.motherheart.examples.jakartadata.shop.order.persistence;
+package ch.motherheart.examples.jakartadata.shop.order.persistence;
 
-import org.motherheart.examples.jakartadata.shop.order.dto.OrderSummary;
+import ch.motherheart.examples.jakartadata.shop.order.dto.OrderSummary;
 import jakarta.data.repository.CrudRepository;
 import jakarta.data.repository.Insert;
 import jakarta.data.repository.Query;

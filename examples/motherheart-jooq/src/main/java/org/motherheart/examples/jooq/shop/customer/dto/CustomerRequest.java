@@ -1,4 +1,4 @@
-package org.motherheart.examples.jooq.shop.customer.dto;
+package ch.motherheart.examples.jooq.shop.customer.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

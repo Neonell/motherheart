@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.motherheart</groupId>
+        <groupId>ch.motherheart</groupId>
         <artifactId>motherheart</artifactId>
         <version>0.1.0-SNAPSHOT</version>
     </parent>
@@ -56,7 +56,7 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.motherheart</groupId>
+            <groupId>ch.motherheart</groupId>
             <artifactId>motherheart-core</artifactId>
             <scope>test</scope>
         </dependency>
@@ -124,7 +124,7 @@
                             <javaTimeTypes>true</javaTimeTypes>
                         </generate>
                         <target>
-                            <packageName>org.motherheart.examples.jooq.heart</packageName>
+                            <packageName>ch.motherheart.examples.jooq.heart</packageName>
                             <directory>target/generated-sources/jooq</directory>
                         </target>
                     </generator>
