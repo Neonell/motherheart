@@ -23,7 +23,7 @@ DTOs, repositories, and APIs should remain isolated within their domain boundary
 See [examples](examples/README.md): one shop, built twice (Jakarta Data and jOOQ), with the manifest enforced by ArchUnit rules (`motherheart-core`).
 
 ```bash
-cd examples && ./mvnw verify
+cd examples && ./mvnw clean install
 ```
 
 # About me

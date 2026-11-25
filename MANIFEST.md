@@ -16,6 +16,26 @@ But it rejects blind trust in abstraction when abstraction removes visibility, o
 
 ---
 
+# A Coherent Architectural Position
+
+Motherheart Architecture does not invent new techniques.
+
+It was born from practice, not from books.
+
+Its ideas were found independently, while building real software, and only later recognised in established practices: CQRS-style reads, SQL-first thinking, package-by-feature.
+
+This convergence is not a weakness. It is a confirmation: sound problems lead to sound solutions.
+
+An architecture is always a combination of ideas.
+
+What makes Motherheart an architecture is the position it takes: three pillars, explicit rules that follow from them, and rules that can be enforced by the build.
+
+The value is not in novelty.
+
+The value is in consistency: every rule serves one purpose, keeping developers aware, responsible, and close to reality.
+
+---
+
 # The Meaning of Motherheart
 
 The name comes from two essential concepts:
@@ -259,6 +279,14 @@ Prefer understanding over convenience.
 ## Rule 8
 
 Prefer explicitness over magic.
+
+## Rule 9
+
+Every query is validated at build time.
+
+## Rule 10
+
+Domains meet only through their services.
 
 ---
 
