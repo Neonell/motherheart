@@ -3,7 +3,7 @@ Mother-Heart Architecture (MHA) - ou architecture coeur-mère
 By Frédéric Nell
 
 # Definitions
-Check out our manifest
+Check out our [manifest](MANIFEST.md)
 
 This architecture follow two main pillars:
 
@@ -20,7 +20,11 @@ Don't add unnecessary layers, you need to understand clearly what you write, sta
 DTOs, repositories, and APIs should remain isolated within their domain boundary.
 
 # Practical examples
-Coming soon under the moon...
+See [examples](examples/README.md): one shop, built twice (Jakarta Data and jOOQ), with the manifest enforced by ArchUnit rules (`motherheart-core`).
+
+```bash
+cd examples && ./mvnw verify
+```
 
 # About me
 I'm a french mothertongue IT enthousiast with a deep thinking and critical mindeset. I like to re-invent the wheels for fun and lose myself in weird concepts thoughs.
