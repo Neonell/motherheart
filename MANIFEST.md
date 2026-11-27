@@ -282,7 +282,7 @@ Prefer explicitness over magic.
 
 ## Rule 9
 
-Every query is validated at build time.
+Entity relationships may be directional, but never circular
 
 ## Rule 10
 

@@ -302,7 +302,7 @@ public final class MotherheartArchitecture {
                         }
                     }
                 })
-                .because("stay close to SQL, but never trust a query nobody validated (Motherheart §2)")
+                .because("stay close to SQL, but never trust a query nobody validated (Motherheart rule 8)")
                 .allowEmptyShould(true);
     }
 

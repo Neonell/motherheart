@@ -3,6 +3,7 @@ package ch.motherheart.examples.jakartadata.shop;
 import static ch.motherheart.examples.jakartadata.shop.Api.json;
 import static org.hamcrest.Matchers.closeTo;
 import static org.hamcrest.Matchers.contains;
+import static org.hamcrest.Matchers.empty;
 import static org.hamcrest.Matchers.hasSize;
 
 import io.quarkus.test.junit.QuarkusTest;
@@ -20,6 +21,28 @@ class DashboardResourceTest {
                 .body("month", contains(1, 2, 3))
                 .body("orders", contains(2, 1, 1))
                 .body("revenue", contains(closeTo(288.70, 0.001), closeTo(69.90, 0.001), closeTo(398.00, 0.001)));
+    }
+
+    @Test
+    void revenueByMonthWithPagination() {
+        json().queryParam("year", 2025)
+            .queryParam("pageNumber",1)
+            .queryParam("pageSize",10)
+            .get("/dashboard/revenue-by-month-paginated")
+            .then().statusCode(200)
+            .body("month", contains(1, 2, 3))
+            .body("orders", contains(2, 1, 1))
+            .body("revenue", contains(closeTo(288.70, 0.001), closeTo(69.90, 0.001), closeTo(398.00, 0.001)));
+    }
+
+    @Test
+    void revenueByMonthWithPaginationEmptyPage() {
+        json().queryParam("year", 2025)
+            .queryParam("pageNumber",2)
+            .queryParam("pageSize",10)
+            .get("/dashboard/revenue-by-month-paginated")
+            .then().statusCode(200)
+            .body("$", empty());
     }
 
     @Test

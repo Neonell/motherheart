@@ -3,6 +3,7 @@ package ch.motherheart.examples.jakartadata.shop.dashboard.persistence;
 import ch.motherheart.examples.jakartadata.shop.dashboard.dto.MonthlyRevenue;
 import ch.motherheart.examples.jakartadata.shop.dashboard.dto.TopProduct;
 import jakarta.data.Limit;
+import jakarta.data.page.PageRequest;
 import jakarta.data.repository.Query;
 import jakarta.data.repository.Repository;
 import java.time.LocalDateTime;
@@ -28,6 +29,17 @@ public interface DashboardRepository {
             group by extract(year from o.orderedAt), extract(month from o.orderedAt)
             order by extract(year from o.orderedAt), extract(month from o.orderedAt)""")
     List<MonthlyRevenue> revenueByMonth(LocalDateTime from, LocalDateTime to);
+
+    @Query("""
+            select new ch.motherheart.examples.jakartadata.shop.dashboard.dto.MonthlyRevenue(
+                extract(year from o.orderedAt), extract(month from o.orderedAt),
+                count(distinct o.id), sum(l.quantity * l.unitPrice))
+            from PurchaseOrder o
+                join OrderLine l on l.orderId = o.id
+            where o.orderedAt >= :from and o.orderedAt < :to
+            group by extract(year from o.orderedAt), extract(month from o.orderedAt)
+            order by extract(year from o.orderedAt), extract(month from o.orderedAt)""")
+    List<MonthlyRevenue> revenueByMonthWithPagination(LocalDateTime from, LocalDateTime to, PageRequest pageRequest);
 
     @Query("""
             select new ch.motherheart.examples.jakartadata.shop.dashboard.dto.TopProduct(

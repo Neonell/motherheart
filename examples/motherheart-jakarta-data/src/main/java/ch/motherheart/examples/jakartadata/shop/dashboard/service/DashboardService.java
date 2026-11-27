@@ -4,6 +4,7 @@ import ch.motherheart.examples.jakartadata.shop.dashboard.dto.MonthlyRevenue;
 import ch.motherheart.examples.jakartadata.shop.dashboard.dto.TopProduct;
 import ch.motherheart.examples.jakartadata.shop.dashboard.persistence.DashboardRepository;
 import jakarta.data.Limit;
+import jakarta.data.page.PageRequest;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.transaction.Transactional;
 import java.time.LocalDateTime;
@@ -21,6 +22,10 @@ public class DashboardService {
 
     public List<MonthlyRevenue> revenueByMonth(int year) {
         return repository.revenueByMonth(startOf(year), startOf(year + 1));
+    }
+
+    public List<MonthlyRevenue> revenueByMonthWithPagination(int year, int pageNumber, int pageSize) {
+        return repository.revenueByMonthWithPagination(startOf(year), startOf(year + 1), PageRequest.ofPage(pageNumber).size(pageSize));
     }
 
     public List<TopProduct> topProducts(int year, int limit) {
