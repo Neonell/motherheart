@@ -40,4 +40,58 @@ class DashboardResourceTest {
                 .then().statusCode(200)
                 .body("", hasSize(0));
     }
+
+    @Test
+    void revenueByMonthWithPagination() {
+        json().queryParam("year", 2025).queryParam("pageNumber", 1).queryParam("pageSize", 2)
+                .get("/dashboard/revenue-by-month-paginated")
+                .then().statusCode(200)
+                .body("month", contains(1, 2))
+                .body("orders", contains(2, 1))
+                .body("revenue", contains(closeTo(288.70, 0.001), closeTo(69.90, 0.001)));
+    }
+
+    @Test
+    void revenueByMonthWithPaginationSecondPage() {
+        json().queryParam("year", 2025).queryParam("pageNumber", 2).queryParam("pageSize", 2)
+                .get("/dashboard/revenue-by-month-paginated")
+                .then().statusCode(200)
+                .body("month", contains(3))
+                .body("revenue", contains(closeTo(398.00, 0.001)));
+    }
+
+    @Test
+    void revenueByMonthWithPaginationEmptyPage() {
+        json().queryParam("year", 2025).queryParam("pageNumber", 3).queryParam("pageSize", 2)
+                .get("/dashboard/revenue-by-month-paginated")
+                .then().statusCode(200)
+                .body("", hasSize(0));
+    }
+
+    @Test
+    void revenueByMonthSeekFirstPage() {
+        json().queryParam("year", 2025).queryParam("pageSize", 2)
+                .get("/dashboard/revenue-by-month-seek")
+                .then().statusCode(200)
+                .body("month", contains(1, 2))
+                .body("revenue", contains(closeTo(288.70, 0.001), closeTo(69.90, 0.001)));
+    }
+
+    @Test
+    void revenueByMonthSeekNextPage() {
+        // The client sends back the month of the last row of the previous page.
+        json().queryParam("year", 2025).queryParam("afterMonth", 2).queryParam("pageSize", 2)
+                .get("/dashboard/revenue-by-month-seek")
+                .then().statusCode(200)
+                .body("month", contains(3))
+                .body("revenue", contains(closeTo(398.00, 0.001)));
+    }
+
+    @Test
+    void revenueByMonthSeekAfterLastMonthIsEmpty() {
+        json().queryParam("year", 2025).queryParam("afterMonth", 3).queryParam("pageSize", 2)
+                .get("/dashboard/revenue-by-month-seek")
+                .then().statusCode(200)
+                .body("", hasSize(0));
+    }
 }

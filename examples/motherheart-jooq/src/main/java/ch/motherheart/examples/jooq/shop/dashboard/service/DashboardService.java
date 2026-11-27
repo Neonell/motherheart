@@ -26,6 +26,15 @@ public class DashboardService {
         return repository.topProducts(startOf(year), startOf(year + 1), limit);
     }
 
+    public List<MonthlyRevenue> revenueByMonthPaginated(int year, int pageNumber, int pageSize) {
+        return repository.revenueByMonthsPaginated(startOf(year), startOf(year + 1), pageNumber, pageSize);
+    }
+
+    /** The year is fixed by the range, so the client only sends back the last month it received. */
+    public List<MonthlyRevenue> revenueByMonthSeeked(int year, int afterMonth, int pageSize) {
+        return repository.revenueByMonthSeeked(startOf(year), startOf(year + 1), year, afterMonth, pageSize);
+    }
+
     private static LocalDateTime startOf(int year) {
         return LocalDateTime.of(year, 1, 1, 0, 0);
     }
